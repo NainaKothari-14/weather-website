@@ -20,7 +20,7 @@ A clean and responsive weather app built with HTML, CSS, and JavaScript that fet
 - 🌡️ Displays real-time temperature in °C
 - 💧 Shows humidity percentage
 - 💨 Shows wind speed in km/h
-- 🌦️ Dynamic weather icons based on conditions (Clouds, Clear, Rain, Drizzle, Mist, Snow)
+- 🌦️ Dynamic weather icons based on conditions
 - ⚠️ Error handling for invalid city names
 - 📱 Responsive design for all screen sizes
 
@@ -45,15 +45,15 @@ weather-website/
 ├── asset/
 │   ├── style.css           # Stylesheet
 │   └── image/
-│       ├── search.png      # Search button icon
-│       ├── humidity.png    # Humidity icon
-│       ├── wind.png        # Wind icon
-│       ├── clouds.png      # Clouds weather icon
-│       ├── clear.png       # Clear sky icon
-│       ├── rain.png        # Rain icon
-│       ├── drizzle.png     # Drizzle icon
-│       ├── mist.png        # Mist icon
-│       └── snow.png        # Snow icon
+│       ├── search.png
+│       ├── humidity.png
+│       ├── wind.png
+│       ├── clouds.png
+│       ├── clear.png
+│       ├── rain.png
+│       ├── drizzle.png
+│       ├── mist.png
+│       └── snow.png
 └── sceenshots/
     ├── Mumbai.png
     └── Delhi.png
@@ -93,14 +93,14 @@ weather-website/
 
 ## 🌦️ Supported Weather Conditions
 
-| Condition | Icon Used |
-|-----------|-----------|
-| Clouds | `clouds.png` |
-| Clear | `clear.png` |
-| Rain | `rain.png` |
-| Drizzle | `drizzle.png` |
-| Mist | `mist.png` |
-| Snow | `snow.png` |
+| Icon | Condition |
+|------|-----------|
+| <img src="https://raw.githubusercontent.com/NainaKothari-14/weather-website/main/asset/image/clouds.png" width="40"> | Clouds |
+| <img src="https://raw.githubusercontent.com/NainaKothari-14/weather-website/main/asset/image/clear.png" width="40"> | Clear |
+| <img src="https://raw.githubusercontent.com/NainaKothari-14/weather-website/main/asset/image/rain.png" width="40"> | Rain |
+| <img src="https://raw.githubusercontent.com/NainaKothari-14/weather-website/main/asset/image/drizzle.png" width="40"> | Drizzle |
+| <img src="https://raw.githubusercontent.com/NainaKothari-14/weather-website/main/asset/image/mist.png" width="40"> | Mist |
+| <img src="https://raw.githubusercontent.com/NainaKothari-14/weather-website/main/asset/image/snow.png" width="40"> | Snow |
 
 ---
 
