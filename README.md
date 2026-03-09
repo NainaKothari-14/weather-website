@@ -1,26 +1,28 @@
-# 🌤️ Weather Website
+# 🌤️ Weather App
 
-A clean and responsive weather website built with HTML and CSS.
+A clean and responsive weather app built with HTML, CSS, and JavaScript that fetches real-time weather data using the OpenWeatherMap API.
 
 ---
 
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="sceenshots/screenshot1.png" alt="Weather Website - Home" width="48%" />
+  <img src="sceenshots/Mumbai.png" alt="Mumbai Weather" width="48%" />
   &nbsp;
-  <img src="sceenshots/screenshot2.png" alt="Weather Website - Results" width="48%" />
+  <img src="sceenshots/Delhi.png" alt="Delhi Weather" width="48%" />
 </p>
 
 ---
 
 ## 🚀 Features
 
-- 🌡️ Displays current weather conditions
-- 📍 Location-based weather information
-- 💨 Wind, humidity, and temperature details
-- 🎨 Clean and minimal UI design
-- 📱 Fully responsive layout
+- 🔍 Search weather by city name
+- 🌡️ Displays real-time temperature in °C
+- 💧 Shows humidity percentage
+- 💨 Shows wind speed in km/h
+- 🌦️ Dynamic weather icons based on conditions (Clouds, Clear, Rain, Drizzle, Mist, Snow)
+- ⚠️ Error handling for invalid city names
+- 📱 Responsive design for all screen sizes
 
 ---
 
@@ -30,6 +32,8 @@ A clean and responsive weather website built with HTML and CSS.
 |------------|-------|
 | HTML5 | Structure & layout |
 | CSS3 | Styling & responsiveness |
+| JavaScript (Vanilla) | API calls & DOM manipulation |
+| [OpenWeatherMap API](https://openweathermap.org/api) | Real-time weather data |
 
 ---
 
@@ -37,9 +41,22 @@ A clean and responsive weather website built with HTML and CSS.
 
 ```
 weather-website/
-├── index.html        # Main HTML file
-├── asset/            # Icons, images, and other assets
-└── sceenshots/       # Project screenshots
+├── index.html              # Main app file
+├── asset/
+│   ├── style.css           # Stylesheet
+│   └── image/
+│       ├── search.png      # Search button icon
+│       ├── humidity.png    # Humidity icon
+│       ├── wind.png        # Wind icon
+│       ├── clouds.png      # Clouds weather icon
+│       ├── clear.png       # Clear sky icon
+│       ├── rain.png        # Rain icon
+│       ├── drizzle.png     # Drizzle icon
+│       ├── mist.png        # Mist icon
+│       └── snow.png        # Snow icon
+└── sceenshots/
+    ├── Mumbai.png
+    └── Delhi.png
 ```
 
 ---
@@ -48,7 +65,8 @@ weather-website/
 
 ### Prerequisites
 
-All you need is a web browser — no installations required!
+- A web browser
+- A free API key from [OpenWeatherMap](https://openweathermap.org/api)
 
 ### Run Locally
 
@@ -62,35 +80,27 @@ All you need is a web browser — no installations required!
    cd weather-website
    ```
 
-3. **Open `index.html` in your browser**
-   ```bash
-   open index.html
-   # or just double-click the file
+3. **Add your API key**  
+   Open `index.html` and replace the `apiKey` value with your own:
+   ```js
+   const apiKey = "your_api_key_here";
    ```
 
----
-
-## 🌐 Live Demo
-
-> _Coming soon..._
+4. **Open `index.html` in your browser**  
+   Just double-click the file — no server needed!
 
 ---
 
-## 🤝 Contributing
+## 🌦️ Supported Weather Conditions
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+| Condition | Icon Used |
+|-----------|-----------|
+| Clouds | `clouds.png` |
+| Clear | `clear.png` |
+| Rain | `rain.png` |
+| Drizzle | `drizzle.png` |
+| Mist | `mist.png` |
+| Snow | `snow.png` |
 
 ---
 
